@@ -10,14 +10,14 @@
 </head>
 <body>
   <div class="container-fluid">
-    <div class="row">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        
         <img src="https://static.vecteezy.com/system/resources/previews/008/385/736/non_2x/instagram-social-media-icon-symbol-element-illustration-free-vector.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
         <a class="navbar-brand" href="#">Instagram</a>
           
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item dropdown">
@@ -49,22 +49,25 @@
                 </div>
               </div>
             </div>
+
                 <!-- Boton ajustes -->
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-gear"></i></button>
-              <ul class="dropdown-menu">
+            <div class="btn-group ps-2">
+              <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                <i class="fa-solid fa-gear"></i>
+              </button>
+              <ul class="dropdown-menu dropdown-menu-lg-end">
                 <li><a class="dropdown-item" href="#">Profile</a></li>
                 <li><a class="dropdown-item" href="#">Accesibiliby</a></li>
                 <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Log out</a></li>
+                <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
               </ul>
             </div>
+            <!-- Final boton ajustes -->
 
-          </div>
         </div>
+
       </nav>
-    </div>
   </div>
 
     <!-- cambio de fotos de mosaico a vertical -->
@@ -82,37 +85,121 @@
     </div>
 
     <div class="card-body">
+
+      <!-- Imagenes mosaico -->
       <div class="tab-content">
         <div class="tab-pane fade show active" id="mosaic-view">
-          <!-- Contenido para la vista de mosaico -->
-          <div class="row">
-            <div class="col-4"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" style="width: 100%;"></div>
-            <div class="col-4"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" style="width: 100%;"></div>
-            <div class="col-4"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" style="width: 100%;"></div>
-          </div>
-          
-          <div class="row">
-            <div class="col-4"><img src="https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg" style="width: 100%;"></div>
-            <div class="col-4"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" style="width: 100%;"></div>
-            <div class="col-4"><img src="https://images.unsplash.com/reserve/Af0sF2OS5S5gatqrKzVP_Silhoutte.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80" style="width: 100%;"></div>
-          </div>
+          <div class="container-fluid">                         
+            <div class="row g-1">
+              <div class="col-4">
+                <div class="p-1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" style="width: 100%;"></div>
+              </div>
+              <div class="col-4">
+                <div class="p-1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" style="width: 100%;"></div>
+              </div>
+              <div class="col-4">
+                <div class="p-1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" style="width: 100%;"></div>
+              </div>
+            </div>
+            
+            <div class="row g-1">
+              <div class="col-4">
+                <div class="p-1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" style="width: 100%;"></div>
+              </div>
+              <div class="col-4">
+                <div class="p-1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" style="width: 100%;"></div>
+              </div>
+              <div class="col-4">
+                <div class="p-1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" style="width: 100%;"></div>
+              </div>
+            </div>
 
-          <div class="row">
-            <div class="col-4"><img src="https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg" style="width: 100%;"></div>
-            <div class="col-4"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" style="width: 100%;"></div>
-            <div class="col-4"><img src="https://images.unsplash.com/reserve/Af0sF2OS5S5gatqrKzVP_Silhoutte.jpg?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80" style="width: 100%;"></div>
+            <div class="row g-1">
+              <div class="col-4">
+                <div class="p-1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" style="width: 100%;"></div>
+              </div>
+              <div class="col-4">
+                <div class="p-1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" style="width: 100%;"></div>
+              </div>
+              <div class="col-4">
+                <div class="p-1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" style="width: 100%;"></div>
+            </div>
           </div>
-        </div>
-
-        <div class="tab-pane fade" id="vertical-view">
-          <!-- Contenido para la vista vertical -->
-          <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"></div>
-          <img src="https://www.tooltyp.com/wp-content/uploads/2014/10/1900x920-8-beneficios-de-usar-imagenes-en-nuestros-sitios-web.jpg"></div>
-          <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"></div>
         </div>
       </div>
+      <!-- Fin imagenes mosaico -->       
+
+                
+          <!-- Contenido para la vista vertical -->
+          <div class="container">
+            <div class="tab-pane fade" id="vertical-view">
+
+              <div class="card mb-4">
+                <div class="d-flex justify-content-between">
+                  <h1 class="card-title ms-3 mt-2 mb-3">My Crazy dog Spark!</h1>
+                  <p class="card-text mt-2 me-3">08/26</p>
+                </div>
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" class="card-img-bottom" alt="">
+                <h3 class="card-title text-start mt-1 mb-0 ms-3">204 Likes</h3>
+                <p class="card-text text-start mt-0 mb-4 ms-3">This is an example of a very good photo that you can post on Instagram</p>
+              </div> 
+
+              <div class="card mb-4">
+                <div class="d-flex justify-content-between">
+                  <h1 class="card-title ms-3 mt-2 mb-3">The greatness of Croatia</h1>
+                  <p class="card-text mt-2 me-3">04/09</p>
+                </div>
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" class="card-img-bottom" alt="">
+                <h3 class="card-title text-start mt-1 mb-0 ms-3">26985 Likes</h3>
+                <p class="card-text text-start mt-0 mb-4 ms-3">This is an example of a very good photo that you can post on Instagram</p>
+              </div>             
+
+              <div class="card mb-4">
+                <div class="d-flex justify-content-between">
+                  <h1 class="card-title ms-3 mt-2 mb-3">Amazing GOAL by Cristiano!</h1>
+                  <p class="card-text mt-2 me-3">06/10</p>
+                </div>
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" class="card-img-bottom" alt="">
+                <h3 class="card-title text-start mt-1 mb-0 ms-3">204 Likes</h3>
+                <p class="card-text text-start mt-0 mb-4 ms-3">This is an example of a very good photo that you can post on Instagram</p>
+              </div> 
+
+              <div class="card mb-4">
+                <div class="d-flex justify-content-between">
+                  <h1 class="card-title ms-3 mt-2 mb-3">The greatness of Croatia</h1>
+                  <p class="card-text mt-2 me-3">04/09</p>
+                </div>
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" class="card-img-bottom" alt="">
+                <h3 class="card-title text-start mt-1 mb-0 ms-3">26985 Likes</h3>
+                <p class="card-text text-start mt-0 mb-4 ms-3">This is an example of a very good photo that you can post on Instagram</p>
+              </div> 
+
+              <div class="card mb-4">
+                <div class="d-flex justify-content-between">
+                  <h1 class="card-title ms-3 mt-2 mb-3">The greatness of Croatia</h1>
+                  <p class="card-text mt-2 me-3">04/09</p>
+                </div>
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" class="card-img-bottom" alt="">
+                <h3 class="card-title text-start mt-1 mb-0 ms-3">26985 Likes</h3>
+                <p class="card-text text-start mt-0 mb-4 ms-3">This is an example of a very good photo that you can post on Instagram</p>
+              </div> 
+
+              <div class="card mb-4">
+                <div class="d-flex justify-content-between">
+                  <h1 class="card-title ms-3 mt-2 mb-3">The greatness of Croatia</h1>
+                  <p class="card-text mt-2 me-3">04/09</p>
+                </div>
+                <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" class="card-img-bottom" alt="">
+                <h3 class="card-title text-start mt-1 mb-0 ms-3">26985 Likes</h3>
+                <p class="card-text text-start mt-0 mb-4 ms-3">This is an example of a very good photo that you can post on Instagram</p>
+              </div> 
+              
+            </div>
+          </div>
+          
     </div>
-  </div>      
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
