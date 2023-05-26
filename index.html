@@ -9,6 +9,7 @@
     <title>Ig photo feed</title>
 </head>
 <body>
+  
   <div class="container-fluid">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         
@@ -24,30 +25,29 @@
               </li>
             </ul>
 
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Launch static backdrop modal</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Create a new post</button>
 
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-              <div class="modal-dialog">
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
                 <div class="modal-content">
-
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Create a new post</h1>
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-
-                  <div class="modal-body">
-                    <p>Caption:</p>
-                    <input type="text" placeholder="Add the caption of your post here">
-                    <i class="fa-solid fa-camera"></i>
-                    <i class="fa-solid fa-location-dot"></i>
-                  </div>
-
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Understood</button>
-                  </div>
                 </div>
-              </div>
+                <div class="modal-body">
+                    <form>
+                    <div class="mb-3">
+                        <label for="message-text" class="col-form-label">Caption:</label>
+                        <textarea class="form-control" id="message-text" placeholder=" Add the caption of your post here"></textarea>
+                    </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                </div>
+                </div>
+            </div>
             </div>
 
                 <!-- Boton ajustes -->
@@ -70,10 +70,12 @@
       </nav>
   </div>
 
-    <!-- cambio de fotos de mosaico a vertical -->
   <div class="card text-center">
+
     <div class="card-header">
+
       <ul class="nav nav-tabs card-header-tabs justify-content-center">
+
         <li class="nav-item">
           <a class="nav-link active" data-bs-toggle="tab" href="#mosaic-view"><i class="fa-solid fa-table-cells"></i></a>
         </li>
@@ -81,59 +83,81 @@
         <li class="nav-item">
           <a class="nav-link" data-bs-toggle="tab" href="#vertical-view"><i class="fa-solid fa-square" style="color: #216ef2;"></i></a>
         </li>
+
       </ul>
+
     </div>
 
     <div class="card-body">
 
       <!-- Imagenes mosaico -->
       <div class="tab-content">
+
         <div class="tab-pane fade show active" id="mosaic-view">
-          <div class="container-fluid">                         
-            <div class="row g-1">
-              <div class="col-4">
-                <div class="p-1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" style="width: 100%;"></div>
-              </div>
-              <div class="col-4">
-                <div class="p-1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" style="width: 100%;"></div>
-              </div>
-              <div class="col-4">
-                <div class="p-1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" style="width: 100%;"></div>
-              </div>
-            </div>
-            
-            <div class="row g-1">
-              <div class="col-4">
-                <div class="p-1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" style="width: 100%;"></div>
-              </div>
-              <div class="col-4">
-                <div class="p-1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" style="width: 100%;"></div>
-              </div>
-              <div class="col-4">
-                <div class="p-1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" style="width: 100%;"></div>
-              </div>
-            </div>
 
+          <div class="container-fluid"> 
+
+            <!-- Primera fila fotos mosaico -->
             <div class="row g-1">
+              <!-- Foto 1 fila 1 -->
               <div class="col-4">
                 <div class="p-1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" style="width: 100%;"></div>
               </div>
+              <!-- Foto 2 fila 1 -->
               <div class="col-4">
                 <div class="p-1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" style="width: 100%;"></div>
               </div>
+              <!-- Foto 3 fila 1 -->
               <div class="col-4">
                 <div class="p-1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" style="width: 100%;"></div>
+              </div>
+
             </div>
+            <!-- Segunda fila fotos mosaico -->
+            <div class="row g-1">
+              <!-- Foto 1 fila 2 -->
+              <div class="col-4">
+                <div class="p-1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" style="width: 100%;"></div>
+              </div>
+              <!-- Foto 2 fila 2 -->
+              <div class="col-4">
+                <div class="p-1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" style="width: 100%;"></div>
+              </div>
+              <!-- Foto 3 fila 2 -->
+              <div class="col-4">
+                <div class="p-1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" style="width: 100%;"></div>
+              </div>
+
+            </div>
+            <!-- Tercera fila fotos mosaico -->
+            <div class="row g-1">
+              <!-- Foto 1 fila 3 -->
+              <div class="col-4">
+                <div class="p-1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" style="width: 100%;"></div>
+              </div>
+              <!-- Foto 2 fila 3 -->
+              <div class="col-4">
+                <div class="p-1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" style="width: 100%;"></div>
+              </div>
+              <!-- Foto 3 fila 3 -->
+              <div class="col-4">
+                <div class="p-1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" style="width: 100%;"></div>
+              </div>
+
+            </div>
+          
           </div>
+
         </div>
+
       </div>
-      <!-- Fin imagenes mosaico -->       
-
                 
-          <!-- Contenido para la vista vertical -->
-          <div class="container">
-            <div class="tab-pane fade" id="vertical-view">
+      <!-- Imagenes vertical -->
+      <div class="container">
 
+        <div class="tab-pane fade" id="vertical-view">
+
+              <!-- Imagen 1 -->
               <div class="card mb-4">
                 <div class="d-flex justify-content-between">
                   <h1 class="card-title ms-3 mt-2 mb-3">My Crazy dog Spark!</h1>
@@ -142,8 +166,9 @@
                 <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" class="card-img-bottom" alt="">
                 <h3 class="card-title text-start mt-1 mb-0 ms-3">204 Likes</h3>
                 <p class="card-text text-start mt-0 mb-4 ms-3">This is an example of a very good photo that you can post on Instagram</p>
-              </div> 
-
+              </div>
+              
+              <!-- Imagen 2 -->
               <div class="card mb-4">
                 <div class="d-flex justify-content-between">
                   <h1 class="card-title ms-3 mt-2 mb-3">The greatness of Croatia</h1>
@@ -154,6 +179,7 @@
                 <p class="card-text text-start mt-0 mb-4 ms-3">This is an example of a very good photo that you can post on Instagram</p>
               </div>             
 
+              <!-- Imagen 3 -->
               <div class="card mb-4">
                 <div class="d-flex justify-content-between">
                   <h1 class="card-title ms-3 mt-2 mb-3">Amazing GOAL by Cristiano!</h1>
@@ -164,6 +190,7 @@
                 <p class="card-text text-start mt-0 mb-4 ms-3">This is an example of a very good photo that you can post on Instagram</p>
               </div> 
 
+              <!-- Imagen 4 -->
               <div class="card mb-4">
                 <div class="d-flex justify-content-between">
                   <h1 class="card-title ms-3 mt-2 mb-3">The greatness of Croatia</h1>
@@ -174,6 +201,7 @@
                 <p class="card-text text-start mt-0 mb-4 ms-3">This is an example of a very good photo that you can post on Instagram</p>
               </div> 
 
+              <!-- Imagen 5 -->
               <div class="card mb-4">
                 <div class="d-flex justify-content-between">
                   <h1 class="card-title ms-3 mt-2 mb-3">The greatness of Croatia</h1>
@@ -184,6 +212,7 @@
                 <p class="card-text text-start mt-0 mb-4 ms-3">This is an example of a very good photo that you can post on Instagram</p>
               </div> 
 
+              <!-- Imagen 6 -->
               <div class="card mb-4">
                 <div class="d-flex justify-content-between">
                   <h1 class="card-title ms-3 mt-2 mb-3">The greatness of Croatia</h1>
@@ -194,12 +223,15 @@
                 <p class="card-text text-start mt-0 mb-4 ms-3">This is an example of a very good photo that you can post on Instagram</p>
               </div> 
               
-            </div>
-          </div>
+        </div>
+
+      </div>
           
     </div>
+
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
 </body>
 </html>
