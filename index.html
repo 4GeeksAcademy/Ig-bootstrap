@@ -20,7 +20,7 @@
     <nav class="navbar navbar-expand-lg">
 
       <!-- Icono más texto Instagram izquierda -->
-      <i class="fa-brands fa-instagram fa-xl" style="color: #000000;"></i>
+      <i class="fa-brands fa-instagram fa-xl me-2" style="color: #000000;"></i>
       <a class="navbar-brand" href="#">Instagram</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -41,30 +41,53 @@
 
         <!-- Pantalla emergente create a new post -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <!-- Contenido ventana emergente -->
           <div class="modal-dialog">
             <div class="modal-content">
-              <!-- Título create a new post más botón cerrar -->
+
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  Create a new post
+                </h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                </button>
+
               </div>
-              <!-- Caption más texto add -->
+
               <div class="modal-body">
                 <form>
                   <div class="mb-3">
-                    <label for="message-text" class="col-form-label">Caption:</label>
-                    <textarea class="form-control" id="message-text"
-                      placeholder=" Add the caption of your post here"></textarea>
+
+                    <label for="message-text" class="col-form-label">
+                      Caption:
+                    </label>
+
+                    <textarea class="form-control" id="message-text" placeholder="Add the caption of your post here">
+                    </textarea>
+
+                    <button type="button" class="btn btn-outline-secondary mt-3 bg-body-secondary border-secondary-subtle">
+                      <i class="fa-solid fa-camera"  style="color: #000000;"></i>
+                    </button>
+
+                    <button type="button" class="btn btn-outline-secondary mt-3 ms-1 bg-body-secondary border-secondary-subtle">
+                      <i class="fa-sharp fa-solid fa-location-dot " style="color: #000000;"></i>
+                    </button>
+
                   </div>
-                </form>
-              </div>
-              <!-- Botones cerrar y publicar -->
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-success">Publish</button>
-              </div>
+              </form>
             </div>
+
+            <div class="modal-footer">
+
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                Close
+              </button>
+              <button type="button" class="btn btn-success">
+                Publish
+              </button>
+
+            </div>
+              </div>
           </div>
         </div>
 
@@ -92,99 +115,86 @@
 
   <!-- Iconos e imagenes -->
   <div class="card text-center bg-white">
+
     <!-- Iconos cambio mosaico a vertical -->
     <div class="card-header">
+
       <ul class="nav nav-tabs card-header-tabs justify-content-center">
+
         <!-- Icono mosaico -->
         <li class="nav-item">
           <a class="nav-link active" data-bs-toggle="tab" href="#mosaic-view"><i
               class="fa-solid fa-table-cells"></i></a>
         </li>
+
         <!-- Icono vertical -->
         <li class="nav-item">
           <a class="nav-link" data-bs-toggle="tab" href="#vertical-view"><i class="fa-solid fa-square"
               style="color: #216ef2;"></i></a>
         </li>
+
       </ul>
+
     </div>
 
 
     <!-- Imagenes mosaico y vertical -->
     <div class="card-body">
+
       <!-- Imagenes mosaico -->
       <div class="tab-content">
         <div class="tab-pane fade show active" id="mosaic-view">
-          <!-- Primera fila fotos mosaico -->
-          <div class="row g-1">
+
+          <div class="row g-3">
+
             <!-- Foto 1 fila 1 -->
-            <div class="col-4">
-              <div class="p-1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"
-                  style="width: 100%;"></div>
+            <div class="col-sm-6 col-md-6 col-lg-4">
+              <img src="https://cdn.pixabay.com/photo/2017/10/25/16/54/african-lion-2888519_1280.jpg" class="img-fluid" style="height: 60vh; width: 100%; object-fit: cover;">
             </div>
+            
             <!-- Foto 2 fila 1 -->
-            <div class="col-4">
-              <div class="p-1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"
-                  style="width: 100%;"></div>
+            <div class="col-sm-6 col-md-6 col-lg-4">
+              <img src="https://images.hola.com/imagenes/viajes/20210722193483/ruta-omis-split-brac-croacia/0-978-105/atardecer-en-la-ciudad-pirata-de-omis-croacia-t.jpg" class="img-fluid" style="height: 60vh; width: 100%; object-fit: cover;">
             </div>
+              
             <!-- Foto 3 fila 1 -->
-            <div class="col-4">
-              <div class="p-1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"
-                  style="width: 100%;"></div>
+            <div class="col-sm-6 col-md-6 col-lg-4">
+              <img src="https://as.com/futbol/imagenes/2018/04/03/album/1522790583_576532_1522790702_album_grande.jpg" class="img-fluid" style="height: 60vh; width: 100%; object-fit: cover;">
             </div>
 
-          </div>
-          <!-- Segunda fila fotos mosaico -->
-          <div class="row g-1">
             <!-- Foto 1 fila 2 -->
-            <div class="col-4">
-              <div class="p-1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"
-                  style="width: 100%;"></div>
+            <div class="col-sm-6 col-md-6 col-lg-4">
+              <img src="https://cdn.pixabay.com/photo/2017/10/25/16/54/african-lion-2888519_1280.jpg" class="img-fluid" style="height: 60vh; width: 100%; object-fit: cover;">
             </div>
+              
             <!-- Foto 2 fila 2 -->
-            <div class="col-4">
-              <div class="p-1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"
-                  style="width: 100%;"></div>
+            <div class="col-sm-6 col-md-6 col-lg-4">
+              <img src="https://images.hola.com/imagenes/viajes/20210722193483/ruta-omis-split-brac-croacia/0-978-105/atardecer-en-la-ciudad-pirata-de-omis-croacia-t.jpg" class="img-fluid" style="height: 60vh; width: 100%; object-fit: cover;">
             </div>
+                
             <!-- Foto 3 fila 2 -->
-            <div class="col-4">
-              <div class="p-1"><img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg"
-                  style="width: 100%;"></div>
-            </div>
-
-          </div>
-
-
-
-          
-
-          <!-- Tercera fila fotos mosaico -->
-          <div class="row g-1">
+            <div class="col-sm-6 col-md-6 col-lg-4">
+              <img src="https://as.com/futbol/imagenes/2018/04/03/album/1522790583_576532_1522790702_album_grande.jpg" class="img-fluid" style="height: 60vh; width: 100%; object-fit: cover;">
+            </div> 
 
             <!-- Foto 1 fila 3 -->
-            <div class="row g-1">
-              <!-- Foto 1 fila 3 -->
-              <div class="col-4 d-flex justify-content-center align-items-center">
-                <img src="https://as.com/futbol/imagenes/2018/04/03/album/1522790583_576532_1522790702_album_grande.jpg" class="img-fluid" style="max-width: 100%; max-height: 100%;">
-              </div>
-            
-              <!-- Foto 2 fila 3 -->
-              <div class="col-4 d-flex justify-content-center align-items-center">
-                <img src="https://as.com/futbol/imagenes/2018/04/03/album/1522790583_576532_1522790702_album_grande.jpg" class="img-fluid" style="max-width: 100%; max-height: 100%;">
-              </div>
-              
-              <!-- Foto 3 fila 3 -->
-              <div class="col-4 d-flex justify-content-center align-items-center">
-                <img src="https://cdn.pixabay.com/photo/2017/10/25/16/54/african-lion-2888519_1280.jpg" class="img-fluid" style="max-width: 100%; max-height: 100%;">
-              </div>
+            <div class="col-sm-6 col-md-6 col-lg-4">
+              <img src="https://cdn.pixabay.com/photo/2017/10/25/16/54/african-lion-2888519_1280.jpg" class="img-fluid" style="height: 60vh; width: 100%; object-fit: cover;">
             </div>
-            
-            
-          
-          
-          
-          
-        </div>
+              
+            <!-- Foto 2 fila 3 -->
+            <div class="col-sm-6 col-md-6 col-lg-4">
+              <img src="https://images.hola.com/imagenes/viajes/20210722193483/ruta-omis-split-brac-croacia/0-978-105/atardecer-en-la-ciudad-pirata-de-omis-croacia-t.jpg" class="img-fluid" style="height: 60vh; width: 100%; object-fit: cover;">
+            </div>
+                
+            <!-- Foto 3 fila 3 -->
+            <div class="col-sm-6 col-md-6 col-lg-4">
+              <img src="https://as.com/futbol/imagenes/2018/04/03/album/1522790583_576532_1522790702_album_grande.jpg" class="img-fluid" style="height: 60vh; width: 100%; object-fit: cover;">
+            </div>            
+              
+          </div>
       </div>
+
       <!-- Imagenes vertical -->
       <div class="container tab-content">
         <div class="tab-pane fade" id="vertical-view">
@@ -195,7 +205,7 @@
               <h1 class="card-title ms-3 mt-2 mb-3">My Crazy dog Spark!</h1>
               <p class="card-text mt-2 me-3">08/26</p>
             </div>
-            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" class="card-img-bottom"
+            <img src="https://cdn.pixabay.com/photo/2017/10/25/16/54/african-lion-2888519_1280.jpg" class="card-img-bottom"
               alt="">
             <h3 class="card-title text-start mt-1 mb-0 ms-3">204 Likes</h3>
             <p class="card-text text-start mt-0 mb-4 ms-3">This is an example of a very good photo that you can post on
@@ -208,7 +218,7 @@
               <h1 class="card-title ms-3 mt-2 mb-3">The greatness of Croatia</h1>
               <p class="card-text mt-2 me-3">04/09</p>
             </div>
-            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" class="card-img-bottom"
+            <img src="https://images.hola.com/imagenes/viajes/20210722193483/ruta-omis-split-brac-croacia/0-978-105/atardecer-en-la-ciudad-pirata-de-omis-croacia-t.jpg" class="card-img-bottom"
               alt="">
             <h3 class="card-title text-start mt-1 mb-0 ms-3">26985 Likes</h3>
             <p class="card-text text-start mt-0 mb-4 ms-3">This is an example of a very good photo that you can post on
@@ -221,7 +231,7 @@
               <h1 class="card-title ms-3 mt-2 mb-3">Amazing GOAL by Cristiano!</h1>
               <p class="card-text mt-2 me-3">06/10</p>
             </div>
-            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" class="card-img-bottom"
+            <img src="https://as.com/futbol/imagenes/2018/04/03/album/1522790583_576532_1522790702_album_grande.jpg" class="card-img-bottom"
               alt="">
             <h3 class="card-title text-start mt-1 mb-0 ms-3">204 Likes</h3>
             <p class="card-text text-start mt-0 mb-4 ms-3">This is an example of a very good photo that you can post on
@@ -231,12 +241,12 @@
           <!-- Imagen 4 -->
           <div class="card mb-4">
             <div class="d-flex justify-content-between">
-              <h1 class="card-title ms-3 mt-2 mb-3">The greatness of Croatia</h1>
-              <p class="card-text mt-2 me-3">04/09</p>
+              <h1 class="card-title ms-3 mt-2 mb-3">My Crazy dog Spark!</h1>
+              <p class="card-text mt-2 me-3">08/26</p>
             </div>
-            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" class="card-img-bottom"
+            <img src="https://cdn.pixabay.com/photo/2017/10/25/16/54/african-lion-2888519_1280.jpg" class="card-img-bottom"
               alt="">
-            <h3 class="card-title text-start mt-1 mb-0 ms-3">26985 Likes</h3>
+            <h3 class="card-title text-start mt-1 mb-0 ms-3">204 Likes</h3>
             <p class="card-text text-start mt-0 mb-4 ms-3">This is an example of a very good photo that you can post on
               Instagram</p>
           </div>
@@ -247,7 +257,7 @@
               <h1 class="card-title ms-3 mt-2 mb-3">The greatness of Croatia</h1>
               <p class="card-text mt-2 me-3">04/09</p>
             </div>
-            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" class="card-img-bottom"
+            <img src="https://images.hola.com/imagenes/viajes/20210722193483/ruta-omis-split-brac-croacia/0-978-105/atardecer-en-la-ciudad-pirata-de-omis-croacia-t.jpg" class="card-img-bottom"
               alt="">
             <h3 class="card-title text-start mt-1 mb-0 ms-3">26985 Likes</h3>
             <p class="card-text text-start mt-0 mb-4 ms-3">This is an example of a very good photo that you can post on
@@ -257,54 +267,59 @@
           <!-- Imagen 6 -->
           <div class="card mb-4">
             <div class="d-flex justify-content-between">
-              <h1 class="card-title ms-3 mt-2 mb-3">The greatness of Croatia</h1>
-              <p class="card-text mt-2 me-3">04/09</p>
+              <h1 class="card-title ms-3 mt-2 mb-3">Amazing GOAL by Cristiano!</h1>
+              <p class="card-text mt-2 me-3">06/10</p>
             </div>
-            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" class="card-img-bottom"
+            <img src="https://as.com/futbol/imagenes/2018/04/03/album/1522790583_576532_1522790702_album_grande.jpg" class="card-img-bottom"
               alt="">
-            <h3 class="card-title text-start mt-1 mb-0 ms-3">26985 Likes</h3>
+            <h3 class="card-title text-start mt-1 mb-0 ms-3">204 Likes</h3>
             <p class="card-text text-start mt-0 mb-4 ms-3">This is an example of a very good photo that you can post on
               Instagram</p>
           </div>
+
           <!-- Imagen 7 -->
           <div class="card mb-4">
             <div class="d-flex justify-content-between">
-              <h1 class="card-title ms-3 mt-2 mb-3">The greatness of Croatia</h1>
-              <p class="card-text mt-2 me-3">04/09</p>
+              <h1 class="card-title ms-3 mt-2 mb-3">My Crazy dog Spark!</h1>
+              <p class="card-text mt-2 me-3">08/26</p>
             </div>
-            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" class="card-img-bottom"
+            <img src="https://cdn.pixabay.com/photo/2017/10/25/16/54/african-lion-2888519_1280.jpg" class="card-img-bottom"
               alt="">
-            <h3 class="card-title text-start mt-1 mb-0 ms-3">26985 Likes</h3>
+            <h3 class="card-title text-start mt-1 mb-0 ms-3">204 Likes</h3>
             <p class="card-text text-start mt-0 mb-4 ms-3">This is an example of a very good photo that you can post on
               Instagram</p>
           </div>
+
           <!-- Imagen 8 -->
           <div class="card mb-4">
             <div class="d-flex justify-content-between">
               <h1 class="card-title ms-3 mt-2 mb-3">The greatness of Croatia</h1>
               <p class="card-text mt-2 me-3">04/09</p>
             </div>
-            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" class="card-img-bottom"
-              alt="">
-            <h3 class="card-title text-start mt-1 mb-0 ms-3">26985 Likes</h3>
-            <p class="card-text text-start mt-0 mb-4 ms-3">This is an example of a very good photo that you can post on
-              Instagram</p>
-          </div>
-          <!-- Imagen 9 -->
-          <div class="card mb-4">
-            <div class="d-flex justify-content-between">
-              <h1 class="card-title ms-3 mt-2 mb-3">The greatness of Croatia</h1>
-              <p class="card-text mt-2 me-3">04/09</p>
-            </div>
-            <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" class="card-img-bottom"
+            <img src="https://images.hola.com/imagenes/viajes/20210722193483/ruta-omis-split-brac-croacia/0-978-105/atardecer-en-la-ciudad-pirata-de-omis-croacia-t.jpg" class="card-img-bottom"
               alt="">
             <h3 class="card-title text-start mt-1 mb-0 ms-3">26985 Likes</h3>
             <p class="card-text text-start mt-0 mb-4 ms-3">This is an example of a very good photo that you can post on
               Instagram</p>
           </div>
 
+          <!-- Imagen 9 -->
+          <div class="card mb-4">
+            <div class="d-flex justify-content-between">
+              <h1 class="card-title ms-3 mt-2 mb-3">Amazing GOAL by Cristiano!</h1>
+              <p class="card-text mt-2 me-3">06/10</p>
+            </div>
+            <img src="https://as.com/futbol/imagenes/2018/04/03/album/1522790583_576532_1522790702_album_grande.jpg" class="card-img-bottom"
+              alt="">
+            <h3 class="card-title text-start mt-1 mb-0 ms-3">204 Likes</h3>
+            <p class="card-text text-start mt-0 mb-4 ms-3">This is an example of a very good photo that you can post on
+              Instagram</p>
+          </div>
+
         </div>
       </div>
+
+    
     </div>
   </div>
 
